@@ -22,8 +22,7 @@ public class BankFillerListener {
     @Transactional
     @EventListener(ContextRefreshedEvent.class)
     public void fillBank(){
-        Bank bank = bankRepo.findAll().get(0);
-        bank.setAmount(100);
+        Bank bank = Bank.builder().amount(100).build();
         bankRepo.save(bank);
 
     }

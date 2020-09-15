@@ -42,7 +42,11 @@
             <scope>test</scope>
             <version>4.12</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.ironbank</groupId>
+            <artifactId>iron-bank-starter2020</artifactId>
+            <version>1.0</version>
+        </dependency>
 
         <dependency>
             <groupId>com.h2database</groupId>
@@ -68,17 +72,6 @@
     </dependencies>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <build>
         <plugins>
             <plugin>
@@ -89,3 +82,4 @@
     </build>
 
 </project>
+
